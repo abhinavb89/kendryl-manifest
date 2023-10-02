@@ -20,6 +20,7 @@ provider "azurerm" {
  # environment = "german"
   #subscription_id = "sajnfdsajfkjsaf"
 }
+*/
 
 ##when i delete a vm in azure the storage get deleted. os disk get delete
 ###there are secnarion where i dont want os disk get deleted
@@ -33,4 +34,3 @@ terraform {
     }
   }
 }
-*/
