@@ -8,7 +8,7 @@ provider "azurerm" {
 }
 
 ####this is for prod area
-provider "azurerm" {
+/*provider "azurerm" {
   features {
     virtual_machine {
       delete_os_disk_on_deletion = false 
@@ -33,3 +33,4 @@ terraform {
     }
   }
 }
+*/
