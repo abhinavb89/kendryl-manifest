@@ -11,13 +11,13 @@ provider "azurerm" {
 provider "azurerm" {
   features {
     virtual_machine {
-      delete_os_disk_on_deletion = false 
+      delete_os_disk_on_deletion = false
     }
   }
   alias = "provider2-westus"
- # client_id = "xxxx"
- # client_secret = "yyyyy"
- # environment = "german"
+  # client_id = "xxxx"
+  # client_secret = "yyyyy"
+  # environment = "german"
   #subscription_id = "sajnfdsajfkjsaf"
 }
 

@@ -1,16 +1,16 @@
 variable "business_devision" {
   description = "Business devision name"
-  type = string #list of string map numeric
-  default = "sap"
+  type        = string #list of string map numeric
+  default     = "sap"
 }
 
 variable "environment" {
-  type = string 
+  type    = string
   default = "dev"
 }
 ##to defaine a varaible we define varaiuble and the name of the varaible
 variable "resource_group_name" {
-  type =  string 
+  type    = string
   default = "rg-default"
 }
 
@@ -18,6 +18,6 @@ variable "resource_group_name" {
 
 
 variable "resource_group_location" {
-  type = string 
+  type    = string
   default = "eastus2"
 }
