@@ -35,11 +35,12 @@ terraform {
     random = {
       source = "hashicorp/random"
     }
-    backend "azurerm" {
+    
+  }
+  backend "azurerm" {
       resource_group_name = "terraform-storage"
       storage_account_name = "terraformstategop"
       container_name = "tfstatefiles"
       key = "project1-eastus.tfstate"
     }
-  }
 }
