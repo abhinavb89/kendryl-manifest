@@ -14,14 +14,14 @@ resource "azurerm_linux_virtual_machine" "web_linux_vm" {
   resource_group_name             = azurerm_resource_group.myrg1.name
   size                            = "Standard_DS1_v2"
   admin_username                  = "azureuser"
-  admin_password                  = var.adminpw
-  disable_password_authentication = false
+  #admin_password                  = var.adminpw
+  #disable_password_authentication = false
   network_interface_ids           = [azurerm_network_interface.web_linux_nic[each.key].id]
-  /*admin_ssh_key {
+  admin_ssh_key {
     username = "azureuser"
     ##path.module is the root directory it is like callign your current directory
     public_key = file("${path.module}/ssh-keys/terraform-azure.pem.pub")
-  }*/
+  }
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
