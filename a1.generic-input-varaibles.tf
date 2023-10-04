@@ -6,7 +6,7 @@ variable "business_devision" {
 
 variable "environment" {
   type    = string
-  default = "dev"
+  default = "project"
 }
 ##to defaine a varaible we define varaiuble and the name of the varaible
 variable "resource_group_name" {
