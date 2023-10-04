@@ -1,4 +1,4 @@
-##we will provide public ip to bastion host
+/*##we will provide public ip to bastion host
 resource "azurerm_public_ip" "bastion_host_publicip" {
   name                = "${local.resurce_name_prefix}-bastion-host-publicip"
   location            = azurerm_resource_group.myrg1.location
@@ -38,7 +38,7 @@ resource "azurerm_linux_virtual_machine" "bastion_linux_vm" {
     username = "azureuser"
     ##path.module is the root directory it is like callign your current directory
     public_key = file("${path.module}/ssh-keys/terraform-azure.pem.pub")
-  }*/
+  }
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
@@ -54,3 +54,4 @@ resource "azurerm_linux_virtual_machine" "bastion_linux_vm" {
   #if you boot strap data is in inside a file in shell format
   #custom_data = filebase64("${path.module}/app/app.sh")
 }
+*/
